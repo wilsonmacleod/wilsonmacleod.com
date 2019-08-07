@@ -7,33 +7,30 @@ class TooltipSummon extends Component {
     state = {
         hover: false
     }
-    handleMouseIn() {
+    onMouseInHander() {
       this.setState({ hover: true })
     }
-    
-   /* handleMouseOut() {
+    onMouseOutHandler() {
       this.setState({ hover: false })
-    }*/
-    
+    }
     render() {
       const tooltipStyle = {
         display: this.state.hover ? 'block' : 'none'
-      }
-      
+      }   
       return (
           <Aux>
-            <div style={tooltipStyle}>
+            <div style={tooltipStyle}
+            onMouseOver={this.onMouseInHander.bind(this)} 
+            onMouseOut={this.onMouseOutHandler.bind(this)}>
               <Tooltip content={this.props.content}/>
               </div>
           <div
-          onMouseOver={this.handleMouseIn.bind(this)} 
-          //onMouseOut={this.handleMouseOut.bind(this)}
-          >
+          onMouseOver={this.onMouseInHander.bind(this)} 
+          onMouseOut={this.onMouseOutHandler.bind(this)}>
           {this.props.children}</div>
           <div>
           </div>
           </Aux>
-
       );
     }
   }

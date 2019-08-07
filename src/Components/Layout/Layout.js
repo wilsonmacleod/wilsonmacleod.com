@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header/Header';
 import Body from './Body/Body';
 import Logo from './Logo/Logo';
+import NavButton from '../Navigation/NavButton/NavButton';
 import Aux from '../../hoc/Auxiliary';
 
 class Layout extends Component {
@@ -12,6 +13,9 @@ class Layout extends Component {
            <Header />
             <Body />
             <Logo />
+            <NavButton 
+            label={'MORE'}
+            />
             </Aux>
         )
     }

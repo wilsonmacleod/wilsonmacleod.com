@@ -53,7 +53,7 @@ const ScBody = () => {
             count={4}
             content={false} />
             <StarChart
-            category={"SQALCHEMY"}
+            category={"SQLALCHEMY"}
             count={3}
             content={false} />
             <StarChart
