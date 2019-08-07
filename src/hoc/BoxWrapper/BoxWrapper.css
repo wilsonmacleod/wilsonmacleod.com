@@ -1,0 +1,6 @@
+.Border {
+    border: 2px solid white;
+    padding: 3px;
+    display: block;
+    max-width: 140px;
+}

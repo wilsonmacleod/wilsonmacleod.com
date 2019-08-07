@@ -1,0 +1,12 @@
+.Item {
+  cursor: pointer;
+  display: inline-block;
+}
+.Star {
+    color: #FFD700;
+    padding:1px;
+  }
+.Skeels {
+  color: #ADD8E6;
+  text-decoration: none;
+}
