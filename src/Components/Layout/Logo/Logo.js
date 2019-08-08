@@ -5,7 +5,7 @@ import logo from '../../../assets/logo/logo.svg'
 
 const reactLogo = () => {
     return (
-        <img title="Created with React" className={classes.ReactLogo} src={logo} alt="logo"/>
+        <img title="Page created using React.js" className={classes.ReactLogo} src={logo} alt="logo"/>
      );
 }
  

@@ -16,7 +16,6 @@ const starChart = (props) => {
     for (i; i < 5; i++) {
         indents.push(<span key={i} className={classes.Star + " fa fa-star"}></span>);
     }
-    console.log(i);
     let finalMain = 
         <p className={classes.Item}>
         <ins className={classes.Skeels}>{props.category}:</ins> 

@@ -1,33 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Aux from '../../../hoc/Auxiliary';
 
 import classes from './NavButton.css';
 
-class NavButton extends Component {
-    state = { 
-        alive: false
-     }
-     onHoverHandler = () => {
-        console.log("Alive")
-        this.setState({ alive: true })
-     }
-    render() { 
-        let startingButton = 
-                    <a href="." className={classes.NavButton}
-                    onMouseOver={this.onHoverHandler.bind(this)}
-                    >
-                    {this.props.label}
-                    </a>
-        if( this.state.alive ){
-            console.log("we really alive out here");
-        }
+const navButton = (props) => {
         return ( 
             <Aux>
-                {startingButton}
+               <div 
+                    className={ classes.NavButton }
+                    onClick={ props.clicked }
+                    >
+                    { props.label }
+                    </div>
             </Aux>
          );
     }
-}
- 
-export default NavButton;
+
+export default navButton;

@@ -45,7 +45,7 @@ const ScBody = () => {
         />
         <StarChart
         category={"SQL"}
-        count={2}
+        count={3}
         content={
             <Aux>
             <StarChart

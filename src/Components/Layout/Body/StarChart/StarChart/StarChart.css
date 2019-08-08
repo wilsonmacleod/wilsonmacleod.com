@@ -2,7 +2,7 @@
   width: 190px;
 }
 .Item {
-  cursor: pointer;
+  cursor: default;
   display: inline-block;
 }
 .Star {

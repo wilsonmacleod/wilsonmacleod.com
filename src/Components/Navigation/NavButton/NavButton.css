@@ -8,15 +8,11 @@
     text-decoration:none;
     font-weight:200;
     color:#000000;
-    background-color: #404040;
+    background-color: #708090;
     text-align:center;
     position: fixed;
     bottom: 28px;
     right: 0;
     cursor: pointer;
+    width: 75px;
 }   
-
-.Alive {
-    height: 100px;
-    width: 100px;
-}
