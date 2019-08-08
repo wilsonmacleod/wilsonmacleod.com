@@ -1,0 +1,14 @@
+.Mb {
+    display:inline-block;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px #000000;
+    color:#000000;
+    background-color: inherit;
+    position: relative;
+    cursor: pointer;
+    height: 100px;
+    width: 250px;
+    overflow: hidden;
+}

@@ -6,6 +6,7 @@ import Modal from '../UI/Modal/Modal';
 import NavButton from '../Navigation/NavButton/NavButton';
 import Logo from './Logo/Logo';
 import Aux from '../../hoc/Auxiliary';
+import NavMenu from '../Navigation/NavMenu/NavMenu';
 
 class Layout extends Component {
 
@@ -15,7 +16,8 @@ class Layout extends Component {
 
     componentDidMount () {
         console.log("Welcome to my site. I'd love to talk more specifically")
-        console.log("about my experiences, skills and interests, feel free to email me at")
+        console.log("about my experiences, skills and interests, feel free to email me at:")
+        console.log("wilsonmacleod@gmail.com")
     }
 
     showModalHandler = () => {
@@ -30,19 +32,20 @@ class Layout extends Component {
       
     render () {
         return (
-            <Aux>
+        <Aux>
            <Header />
            <Modal 
-           show={this.state.showModal}
-           modalClosed={this.hideModalHandler}
-           />
+                show={this.state.showModal}
+                modalClosed={this.hideModalHandler}>
+                <NavMenu />
+            </Modal>
             <Body />
             <NavButton
-            label={"MORE"}
-            clicked={this.showModalHandler}
+                label={"MORE"}
+                clicked={this.showModalHandler}
             />
             <Logo />
-            </Aux>
+        </Aux>
         )
     }
 }
