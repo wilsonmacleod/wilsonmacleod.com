@@ -17,3 +17,9 @@
     max-width: 75px;
     font-family: 'Bitter', serif;
 }   
+
+@media (max-width: 600px) {
+    .NavButton {
+        display: none;
+    }
+}
