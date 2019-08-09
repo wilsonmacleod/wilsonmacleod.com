@@ -19,11 +19,10 @@ const comingSoon = (props) => {
                 src={imageList} 
                 alt="Placeholder"
             />
-            <a   
-                href="/"
+            <div   
                 className={classes.CTitle}>
                 Coming Soon...
-            </a>
+            </div>
             </div>
      );
 }

@@ -25,11 +25,10 @@ const interests = (props) => {
                 src={imageList[props.counter]} 
                 alt="Placeholder"
             />
-            <a   
-                href="/"
+            <div   
                 className={classes.CTitle}>
                 Interests
-            </a>
+            </div>
             </div>
      );
 }
