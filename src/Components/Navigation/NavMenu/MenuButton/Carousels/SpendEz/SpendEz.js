@@ -26,6 +26,7 @@ const spendEz = (props) => {
             />
             <a   
                 href="https://ez.wilsonmacleod.com/spend-ez/login"
+                target="_blank" rel="noopener noreferrer"
                 className={classes.CTitle}>
                 SpendEz
             </a>

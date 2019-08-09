@@ -26,6 +26,7 @@ const projects = (props) => {
             />
             <a   
                 href="https://github.com/wilsonmacleod"
+                target="_blank" rel="noopener noreferrer"
                 className={classes.CTitle}>
                 Projects
             </a>

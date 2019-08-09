@@ -22,9 +22,9 @@ const body = () => {
             solving complex processes or problems with other people.</p>
         <p>My <ins className={classes.Underline}>main</ins> technical proficiencies are in:</p>
         <ScBody />
-        <p>Here is my <a href={resume} className={classes.Link}>Resume</a>.</p>
-        <p>Here is some of my <a href="https://github.com/wilsonmacleod" className={classes.Link}>code</a>.</p>
-        <p>Here is my <a href="https://www.linkedin.com/in/wilson-macleod-97b50b179/" className={classes.Link}>LinkedIn</a>.</p>
+        <p>Here is my <a href={resume} className={classes.Link} target="_blank" rel="noopener noreferrer">Resume</a>.</p>
+        <p>Here is some of my <a href="https://github.com/wilsonmacleod" className={classes.Link} target="_blank" rel="noopener noreferrer">code</a>.</p>
+        <p>Here is my <a href="https://www.linkedin.com/in/wilson-macleod-97b50b179/" className={classes.Link} target="_blank" rel="noopener noreferrer" >LinkedIn</a>.</p>
         <p>Drop me a line at <a href="mailto: wilsonmacleod@gmail.com" className={classes.Link}>wilsonmacleod@gmail.com</a>.</p>
         </div>
     );
