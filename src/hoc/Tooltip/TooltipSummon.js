@@ -5,18 +5,22 @@ import Tooltip from './Tooltip/Tooltip';
 
 class TooltipSummon extends Component {
     state = {
-        hover: false
+      hover: false
     }
     onMouseInHander() {
-      this.setState({ hover: true })
+      this.setState({
+        hover: true
+      })
     }
     onMouseOutHandler() {
-      this.setState({ hover: false })
+      this.setState({
+        hover: false
+      })
     }
     render() {
-      const tooltipStyle = {
-        display: this.state.hover ? 'block' : 'none'
-      }   
+        const tooltipStyle = {
+          display: this.state.hover ? 'block' : 'none'
+        }
       return (
           <Aux>
             <div style={tooltipStyle}

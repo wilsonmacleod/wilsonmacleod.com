@@ -11,7 +11,7 @@ const navButton = (props) => {
                     className={ classes.NavButton }
                     onClick={ props.clicked }
                     >
-                    { props.label }
+                    MORE
                     </div>
             </Aux>
          );

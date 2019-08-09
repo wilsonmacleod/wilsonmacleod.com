@@ -9,6 +9,7 @@ import ComingSoon from './MenuButton/Carousels/ComingSoon/ComingSoon';
 import classes from './NavMenu.css';
 
 class NavMenu extends Component {
+    
     state = {
         counter: {
         ez: 0,
@@ -38,12 +39,25 @@ class NavMenu extends Component {
             this.setState({ counter: updated })
         }
     }
+
     carouselStartHandler = (type) => {
-        this.interval = setInterval(()=>this.carousel(type), 275)   
+        this.interval = setInterval(()=>this.carousel(type), 225)   
      }
 
     carouselEndHandler = () => {
         clearInterval(this.interval);
+    }
+
+    notReadyHandler = () => {
+        this.setState({         
+            counter: {
+                ez: 0,
+                projects: 0,
+                interests: 6,
+                NA: 0
+            } 
+        })
+        this.carouselEndHandler()
     }
 
     render() {
@@ -74,6 +88,7 @@ class NavMenu extends Component {
                     counter={this.state.counter.interests}
                     started={()=>this.carouselStartHandler('interests')}
                     ended={this.carouselEndHandler}
+                    clicked={this.notReadyHandler}
                     />
                     </MenuButton>
                 </div>

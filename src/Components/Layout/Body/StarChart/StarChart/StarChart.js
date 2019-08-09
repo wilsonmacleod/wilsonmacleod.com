@@ -35,7 +35,7 @@ const starChart = (props) => {
                 {finalMain}
                 </BoxWrapper>
     }
-
+    
         return (
             <div className={classes.Container}>
                 {scEl}

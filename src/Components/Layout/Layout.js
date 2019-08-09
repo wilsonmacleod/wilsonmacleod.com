@@ -14,12 +14,6 @@ class Layout extends Component {
         showModal: false
     }
 
-    componentDidMount () {
-        console.log("Welcome to my site. I'd love to talk more specifically")
-        console.log("about my experiences, skills and interests, feel free to email me at:")
-        console.log("wilsonmacleod@gmail.com")
-    }
-
     showModalHandler = () => {
         this.setState({ showModal: true })
     };
@@ -41,7 +35,6 @@ class Layout extends Component {
             </Modal>
             <Body />
             <NavButton
-                label={"MORE"}
                 clicked={this.showModalHandler}
             />
             <Logo />

@@ -17,6 +17,7 @@ const projects = (props) => {
         <div className={classes.Ccontainer}
         onMouseOver={props.started}
         onMouseOut={props.ended}
+        title="Check out my public-facing GitHub code"
         >
             <img 
                 className={classes.CItem} 
