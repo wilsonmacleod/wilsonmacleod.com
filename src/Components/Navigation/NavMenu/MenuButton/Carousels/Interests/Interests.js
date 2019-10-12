@@ -8,7 +8,7 @@ import image3 from '../../../../../../assets/images/CarouselImages/Interests/epl
 import image4 from '../../../../../../assets/images/CarouselImages/Interests/dunk.jpg';
 import image5 from '../../../../../../assets/images/CarouselImages/Interests/pc.jpg';
 import image6 from '../../../../../../assets/images/CarouselImages/Interests/hike.jpg';
-import ComingSoon from '../../../../../../assets/images/CarouselImages/ComingSoon/construction.jpg';
+import ComingSoon from '../../../../../../assets/images/CarouselImages/GW2B/construction.jpg';
 
 const interests = (props) => {
     

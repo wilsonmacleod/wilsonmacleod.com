@@ -4,7 +4,7 @@ import MenuButton from './MenuButton/MenuButton';
 import SpendEZ from './MenuButton/Carousels/SpendEz/SpendEz';
 import Projects from './MenuButton/Carousels/Projects/Projects';
 import Interests from './MenuButton/Carousels/Interests/Interests';
-import ComingSoon from './MenuButton/Carousels/ComingSoon/ComingSoon';
+import GW2B from './MenuButton/Carousels/GW2B/GW2B';
 
 import classes from './NavMenu.css';
 
@@ -15,7 +15,7 @@ class NavMenu extends Component {
         ez: 0,
         projects: 0,
         interests: 0,
-        NA: 0
+        gw2b: 0
         }
      }
 
@@ -32,7 +32,7 @@ class NavMenu extends Component {
                     ez: 0,
                     projects: 0,
                     interests: 0,
-                    NA: 0
+                    gw2b: 0
                 } 
             })
         }else{
@@ -54,7 +54,7 @@ class NavMenu extends Component {
                 ez: 0,
                 projects: 0,
                 interests: 6,
-                NA: 0
+                gw2b: 0
             } 
         })
         this.carouselEndHandler()
@@ -94,7 +94,12 @@ class NavMenu extends Component {
                 </div>
                 <div className={classes.GridItem}>
                     <MenuButton>
-                    <ComingSoon />
+                    <GW2B 
+                    counter={this.state.counter.gw2b}
+                    started={()=>this.carouselStartHandler('gw2b')}
+                    ended={this.carouselEndHandler}
+                    clicked={this.notReadyHandler}
+                    />
                     </MenuButton>
                 </div>
         </div>

@@ -6,9 +6,9 @@ import classes from './SiteContainer.css';
 class SiteContainer extends Component {
 
     componentDidMount() {
-        console.log("Welcome to my site. I'd love to talk more specifically")
-        console.log("about my experiences, skills and interests. Feel free to email me at:")
-        console.log("wilsonmacleod@gmail.com")
+        console.log(`Welcome to my site. I'd love to talk more 
+specifically about my experiences, skills and interests. 
+Feel free to email me at: wilsonmacleod@gmail.com`)
     }
 
     render() {

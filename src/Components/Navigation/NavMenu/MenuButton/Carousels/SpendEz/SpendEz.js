@@ -33,5 +33,5 @@ const spendEz = (props) => {
             </div>
      );
 }
- 
+
 export default spendEz;
