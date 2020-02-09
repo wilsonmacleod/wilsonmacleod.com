@@ -15,20 +15,21 @@ const interests = (props) => {
     const imageList = [image1, image2, image3, image4, image5, image6, ComingSoon]
     return (
         <div className={classes.Ccontainer}
-        onMouseOver={props.started}
-        onMouseOut={props.ended}
-        onClick={props.clicked}
-        title="There's nothing here...yet!"
+            onMouseOver={props.started}
+            onMouseOut={props.ended}
+            onClick={props.clicked}
+            title="MacBlog"
         >
             <img 
                 className={classes.CItem} 
                 src={imageList[props.counter]} 
                 alt="Placeholder"
             />
-            <div   
+            <a   
+                href={'https://macblog.wilsonmacleod.com/'}
                 className={classes.CTitle}>
                 Interests
-            </div>
+            </a>
             </div>
      );
 }

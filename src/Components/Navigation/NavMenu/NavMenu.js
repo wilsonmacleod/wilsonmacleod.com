@@ -48,18 +48,6 @@ class NavMenu extends Component {
         clearInterval(this.interval);
     }
 
-    notReadyHandler = () => {
-        this.setState({         
-            counter: {
-                ez: 0,
-                projects: 0,
-                interests: 6,
-                gw2b: 0
-            } 
-        })
-        this.carouselEndHandler()
-    }
-
     render() {
          
         return ( 
@@ -88,7 +76,6 @@ class NavMenu extends Component {
                     counter={this.state.counter.interests}
                     started={()=>this.carouselStartHandler('interests')}
                     ended={this.carouselEndHandler}
-                    clicked={this.notReadyHandler}
                     />
                     </MenuButton>
                 </div>
@@ -98,7 +85,6 @@ class NavMenu extends Component {
                     counter={this.state.counter.gw2b}
                     started={()=>this.carouselStartHandler('gw2b')}
                     ended={this.carouselEndHandler}
-                    clicked={this.notReadyHandler}
                     />
                     </MenuButton>
                 </div>
