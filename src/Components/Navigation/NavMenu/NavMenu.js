@@ -4,7 +4,7 @@ import MenuButton from './MenuButton/MenuButton';
 import SpendEZ from './MenuButton/Carousels/SpendEz/SpendEz';
 import Projects from './MenuButton/Carousels/Projects/Projects';
 import Interests from './MenuButton/Carousels/Interests/Interests';
-import GW2B from './MenuButton/Carousels/GW2B/GW2B';
+import NBASC from './MenuButton/Carousels/nbaSC/nbaSC';
 
 import classes from './NavMenu.css';
 
@@ -15,7 +15,7 @@ class NavMenu extends Component {
         ez: 0,
         projects: 0,
         interests: 0,
-        gw2b: 0
+        nbasc: 0
         }
      }
 
@@ -32,7 +32,7 @@ class NavMenu extends Component {
                     ez: 0,
                     projects: 0,
                     interests: 0,
-                    gw2b: 0
+                    nbasc: 0
                 } 
             })
         }else{
@@ -52,6 +52,15 @@ class NavMenu extends Component {
          
         return ( 
             <div className={classes.GridWrapper}>
+                 <div className={classes.GridItem}>
+                    <MenuButton>
+                    <NBASC 
+                    counter={this.state.counter.nbasc}
+                    started={()=>this.carouselStartHandler('nbasc')}
+                    ended={this.carouselEndHandler}
+                    />
+                    </MenuButton>
+                </div>
             <div className={classes.GridItem}>
                     <MenuButton>
                     <SpendEZ 
@@ -75,15 +84,6 @@ class NavMenu extends Component {
                     <Interests 
                     counter={this.state.counter.interests}
                     started={()=>this.carouselStartHandler('interests')}
-                    ended={this.carouselEndHandler}
-                    />
-                    </MenuButton>
-                </div>
-                <div className={classes.GridItem}>
-                    <MenuButton>
-                    <GW2B 
-                    counter={this.state.counter.gw2b}
-                    started={()=>this.carouselStartHandler('gw2b')}
                     ended={this.carouselEndHandler}
                     />
                     </MenuButton>

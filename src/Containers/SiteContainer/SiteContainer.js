@@ -4,6 +4,8 @@ import Layout from '../../Components/Layout/Layout';
 import classes from './SiteContainer.css';
 
 class SiteContainer extends Component {
+    state = {
+    }
 
     componentDidMount() {
         console.log(`Welcome to my site. I'd love to talk more 

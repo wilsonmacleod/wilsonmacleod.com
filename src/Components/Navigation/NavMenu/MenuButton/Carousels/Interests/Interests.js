@@ -8,11 +8,10 @@ import image3 from '../../../../../../assets/images/CarouselImages/Interests/epl
 import image4 from '../../../../../../assets/images/CarouselImages/Interests/dunk.jpg';
 import image5 from '../../../../../../assets/images/CarouselImages/Interests/pc.jpg';
 import image6 from '../../../../../../assets/images/CarouselImages/Interests/hike.jpg';
-import ComingSoon from '../../../../../../assets/images/CarouselImages/GW2B/construction.jpg';
 
 const interests = (props) => {
     
-    const imageList = [image1, image2, image3, image4, image5, image6, ComingSoon]
+    const imageList = [image1, image2, image3, image4, image5, image6]
     return (
         <div className={classes.Ccontainer}
             onMouseOver={props.started}
@@ -27,6 +26,7 @@ const interests = (props) => {
             />
             <a   
                 href={'https://macblog.wilsonmacleod.com/'}
+                target="_blank" rel="noopener noreferrer"
                 className={classes.CTitle}>
                 Interests
             </a>
