@@ -1,0 +1,205 @@
+/* orig '//https://gist.github.com/CodeMyUI/b208f5a1b200aa4b7308b121ffe128b4' */
+.PageContent{
+    place-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    font-family: var(--font-sans);
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: 'Noto Serif', serif;
+    --font-serif: 'Bitter', serif;
+}
+@media (min-width: 600px) {
+    .PageContent {
+        grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (min-width: 800px) {
+    .PageContent {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+.Card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    outline: .25px solid whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+    .Card {
+        height: 350px;
+   }
+}
+.Card:before {
+    opacity: .8;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+}
+.Card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+.Card:nth-child(1):before {
+    background-size: contain;
+    background-image: url('../../assets/images/nav/nba_sc.jpg');
+}
+.Card:nth-child(2):before {
+    background-size: contain;
+    background-image: url('../../assets/images/nav/spendez.jpg');
+}
+.Card:nth-child(3):before {
+    background-size: contain;
+    background-image: url('../../assets/images/nav/gw2b.jpg');
+}
+.Card:nth-child(4):before {
+    background-size: contain;
+    background-image: url('../../assets/images/nav/macblog.jpg');
+}
+.Content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.Title {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2.125rem;
+    color:whitesmoke;
+    margin-block-start: -155px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: inherit;
+    cursor: pointer;
+    text-shadow:
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000;
+}
+
+@media (max-width: 600px) {
+    .Title {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+   }
+}
+
+.Title:hover{
+    text-decoration: underline;
+}
+.Copy {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.15;
+    text-shadow:
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000;
+}
+.Tech {
+    margin-top: .15rem;
+    padding: 0.75rem 1.15rem;
+    font-size: 0.55rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.Tech:hover {
+    background-color: #0d0d0d;
+}
+
+.Btn {
+    cursor: pointer;
+    margin-top: .75rem;
+    padding: 0.55rem 1rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3CB371;;
+    box-shadow:
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000;
+}
+
+.Btn:hover {
+    z-index: 1000;
+    background-color: #228B22;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .Card:after {
+        transform: translateY(0);
+   }
+    .Content {
+        transform: translateY(calc(100% - 4.5rem));
+   }
+    .Content > *:not(.Title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+   }
+    .Card:hover, .Card:focus-within {
+        align-items: center;
+   }
+    .Card:hover:before, .Card:focus-within:before {
+        transform: translateY(-4%);
+   }
+    .Card:hover:after, .Card:focus-within:after {
+        transform: translateY(-50%);
+   }
+    .Card:hover .content, .Card:focus-within .Content {
+        transform: translateY(0);
+   }
+    .Card:hover .Content > *:not(.Title), .Card:focus-within .Content > *:not(.Title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+   }
+    .Card:focus-within:before, .Card:focus-within:after, .Card:focus-within .Content, .Card:focus-within .Content > *:not(.Title) {
+        transition-duration: 0s;
+   }
+}
