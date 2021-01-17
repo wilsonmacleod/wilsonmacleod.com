@@ -1,0 +1,54 @@
+.Container{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+
+.DefaultLink{
+    font-size: 20px;
+    font-weight: 300;
+    font: 'Ubuntu', sans-serif;
+    color: #D8D8D8;
+    text-decoration: none;
+}
+
+.DefaultLink:hover{
+    color: #EFC090;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.ActiveLink{
+    font-size: 20px;
+    font-weight: 300;
+    font: 'Ubuntu', sans-serif;
+    color: #EFC090;
+    text-decoration: none;
+}
+
+.Container span{
+    font-size: 28px;
+    font-weight: 500;
+    color: #D8D8D8;
+    text-decoration: none;
+    margin-left: -10px;
+    margin-right: -15px;
+}
+
+@media (max-width: 600px) {
+    .DefaultLink[value="Websites"] {
+        display: none;
+   }
+   .Container span[value="Websites"]{
+       display: none;
+   }
+   .Container span{
+    font-size: 24px;
+    font-weight: 500;
+    color: #D8D8D8;
+    text-decoration: none;
+    margin-left: -10px;
+    margin-right: -15px;
+}
+}

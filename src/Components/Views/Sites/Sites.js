@@ -1,9 +1,11 @@
 import React from 'react';
 // origin https://gist.github.com/CodeMyUI/b208f5a1b200aa4b7308b121ffe128b4
 
-import classes from './Nav.css'
+import Aux from '../../../hoc/Auxiliary';
 
-const nav = (props) => {
+import classes from './Sites.css'
+
+const sites = (props) => {
   const config = props.config;
   let ele =
     config.map(c => 
@@ -15,7 +17,7 @@ const nav = (props) => {
         <p className={classes.Copy}>
           {c.desc}
         </p>
-        {c.techs.map(t => <span className={classes.Tech}>{t}</span>)}
+        {c.techs.map(t => <span key={t} className={classes.Tech}>{t}</span>)}
         <a   
           href={c.siteLink}
           target="_blank" rel="noopener noreferrer"
@@ -33,10 +35,14 @@ const nav = (props) => {
   );
 
   return (
+    <Aux>
+    <p className={classes.Text}>Here are some of my websites: </p>
     <div className={classes.PageContent}>
+      
         {ele}
     </div>
+    </Aux>
   );
 }
 
-export default nav;
+export default sites;

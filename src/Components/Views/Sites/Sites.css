@@ -66,19 +66,19 @@
 }
 .Card:nth-child(1):before {
     background-size: contain;
-    background-image: url('../../assets/images/nav/nba_sc.jpg');
-}
-.Card:nth-child(2):before {
-    background-size: contain;
-    background-image: url('../../assets/images/nav/spendez.jpg');
-}
-.Card:nth-child(3):before {
-    background-size: contain;
-    background-image: url('../../assets/images/nav/gw2b.jpg');
+    background-image: url('../../../assets/images/sites/nba_sc.webp');
 }
 .Card:nth-child(4):before {
     background-size: contain;
-    background-image: url('../../assets/images/nav/macblog.jpg');
+    background-image: url('../../../assets/images/sites/spendez.webp');
+}
+.Card:nth-child(2):before {
+    background-size: contain;
+    background-image: url('../../../assets/images/sites/gw2b.webp');
+}
+.Card:nth-child(3):before {
+    background-size: contain;
+    background-image: url('../../../assets/images/sites/macblog.webp');
 }
 .Content {
     position: relative;
@@ -94,7 +94,7 @@
 .Title {
     font-weight: bolder;
     font-style: italic;
-    font-size: 2.125rem;
+    font-size: 26px;
     color:whitesmoke;
     margin-block-start: -175px;
     margin-block-end: 0px;
@@ -123,7 +123,7 @@
 }
 .Copy {
     font-family: var(--font-serif);
-    font-size: 1rem;
+    font-size: 16px;
     font-style: italic;
     line-height: 1.15;
     text-shadow:
@@ -133,11 +133,10 @@
     2px 2px 2px #000;
 }
 .Tech {
-    margin-top: .15rem;
-    padding: 0.75rem 1.15rem;
-    font-size: 0.55rem;
+    margin-top: .5px;
+    padding: 10px 10px;
+    font-size: 12px;
     font-weight: bold;
-    letter-spacing: 0.025rem;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -150,11 +149,10 @@
 
 .Btn {
     cursor: pointer;
-    margin-top: .75rem;
-    padding: 0.55rem 1rem;
-    font-size: 0.65rem;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 12px;
     font-weight: bold;
-    letter-spacing: 0.025rem;
     text-transform: uppercase;
     color: white;
     background-color: #3CB371;;
@@ -202,4 +200,11 @@
     .Card:focus:before, .Card:focus:after, .Card:focus .Content, .Card:focus .Content > *:not(.Title) {
         transition-duration: 0s;
    }
+}
+
+.Text {
+    font-family: 'Noto Serif', serif;
+    margin-left: 20px;
+    color: white;
+    padding-bottom: 5px;
 }

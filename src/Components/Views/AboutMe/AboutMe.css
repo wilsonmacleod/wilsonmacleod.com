@@ -1,0 +1,47 @@
+.MainContent {
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    margin-left: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.Underline {
+    text-decoration: underline;
+}
+
+.Link {
+    font: inherit;
+    color: #99FF99;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.SkillContainer{
+    display: block;
+    max-width: 25%;
+}
+  
+.Skill{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+	border: 1px solid #EFC090;
+    background: inherit;
+    border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow:
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000;
+}
+
+@media (max-width: 600px) {
+    .SkillContainer{
+        display: block;
+        max-width: 100%;
+    }
+}

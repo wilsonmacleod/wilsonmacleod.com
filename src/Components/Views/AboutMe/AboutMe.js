@@ -1,10 +1,16 @@
 import React from 'react';
 
-import resume from '../../assets/resume/wmacleod-resume.pdf';
-import classes from './Body.css';
+import resume from '../../../assets/resume/wmacleod-resume.pdf';
+import classes from './AboutMe.css';
 
-const body = (props) => {
-    
+const aboutMe = (props) => {
+    let ele = []
+    props.skills.forEach(e => {
+            return ele.push(<span
+                                className={classes.Skill}
+                                key={e}
+                                >{e}</span>)
+    });    
     return (
         <div className={classes.MainContent}>
         <p>I am an aspiring software developer.</p>
@@ -14,18 +20,18 @@ const body = (props) => {
         Geography-Geographic Information Systems.</p>
         <p>When I'm not learning or working,
         I enjoy playing basketball, travelling, 
-        and playing with my dog,
-        <ins className={classes.LinkDaisy}> Daisy</ins>.</p>
+        and playing with my dog, Daisy.</p>
         <p>I enjoy creating things, finding efficiencies and
-            solving complex processes or problems with other people.</p>
+            solving complex processes as part of a team or solo.</p>
+        <p>Here are some things I  know: </p>
+        <p   className={classes.SkillContainer}> {ele}</p>
         <p>Here is my <a href={resume} className={classes.Link} target="_blank" rel="noopener noreferrer">Resume</a>.</p>
         <p>Here is my <a href="https://github.com/wilsonmacleod" className={classes.Link} target="_blank" rel="noopener noreferrer">Github</a>.</p>
         <p>Here is my <a href="https://www.linkedin.com/in/wilson-macleod-97b50b179/" className={classes.Link} target="_blank" rel="noopener noreferrer" >LinkedIn</a>.</p>
-        <p>You can contact me at <a href="mailto: wilsonmacleod@gmail.com" className={classes.Link}>wilsonmacleod@gmail.com</a>.</p>
-        <p>Check out some of my projects:</p>
-        {props.children}
+        <p>You can learn more about me, my skills and interests by navigating the above menu.</p>
+        <p>You can also contact me at <a href="mailto: wilsonmacleod@gmail.com" className={classes.Link}>wilsonmacleod@gmail.com</a>.</p>
         </div>
     );
-}
+};
  
-export default body;
+export default aboutMe;

@@ -1,8 +1,9 @@
+
 .Picture {
     width: 241px;
     height: 271px;
     margin-left: 15px;
-    margin-top: -10px;
+    margin-top: 55px;
 }
 
 .Title {
@@ -20,4 +21,41 @@
     2px -2px 2px #000,
     -2px 2px 2px #000,
     2px 2px 2px #000;
+}
+
+.Cursor{
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-shadow:
+    -2px -2px 2px #000,
+    2px -2px 2px #000,
+    -2px 2px 2px #000,
+    2px 2px 2px #000;
+}
+
+.ConsoleLog {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 24px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
+}  
+
+.ConsoleLog span[id="cons"]{
+    color: #9CDCFE;
+}
+.ConsoleLog span[id="log"]{
+    color: #D9E577;
+}
+.ConsoleLog span[id="par"]{
+    color: #D197D9;
+}
+.ConsoleLog span[id="col"]{
+    color: #FFFFFF;
+}
+.ConsoleLog span[id="str"]{
+    color: #CE9178;
+}
+.ConsoleLog span[id="cmt"]{
+    color: #608B4E;
 }

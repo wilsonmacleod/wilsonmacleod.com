@@ -1,0 +1,73 @@
+.Toolbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #282c34;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition-delay: all .8s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,.03), 0 3px 6px rgba(0,0,0,.03);
+}
+.Hidden {
+    display: none;
+    transition-delay: all .8s ease-in-out;
+}
+
+.Static {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    align-items: center;
+    background-color: inherit;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.Static ul {
+    list-style: none;
+}
+
+.Toolbar ul {
+    float: right;
+    height: 100%; 
+    list-style: none;
+}
+
+
+.GithubIcon {
+    float: right;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    height: 41px;
+    background: url('../../../assets/icons/github.svg');
+    background-size: 50px 41px;
+}
+
+.LinkedInIcon {
+    float: right;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    height: 41px;
+    background: url('../../../assets/icons/linkedin.svg');
+    background-size: 50px 41px;
+}
+
+
+.Toolbar.afterscroll {
+    background-color:#1ba4df;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .Toolbar {
+        display: none;
+    }
+}

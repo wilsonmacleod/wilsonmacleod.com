@@ -1,0 +1,106 @@
+.Text {
+    font-family: 'Noto Serif', serif;
+    margin-left: 20px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.Container{
+    display: inline-block;
+    columns: 300px 4;
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+@media (max-width: 600px) {
+.Container{
+    display: inline-block;
+    columns: 300px 1;
+    overflow: hidden;
+    max-height: none;
+}
+.Proj{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    background: #1E1E1E;
+    border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+
+}
+.Proj{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    background: #1E1E1E;
+    border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.Proj a{
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.Proj a:hover{
+    color: #EFC090;
+}
+
+.Proj p{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.Proj span{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Proj span[value="star"]{
+    display: inline-block;
+    color: #f1e05a;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.Circle {
+    background: white;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: .5px solid  black;
+}
+
+
+.Circle[value="JavaScript"]{
+    background: #f1e05a;
+}
+
+.Circle[value="Python"]{
+    background: #3572A5;
+}
+
+.Circle[value="CSS"]{
+    background: #563d7c;
+}
+
+.Circle[value=""]{
+    display: none;
+}

@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
 }
 
 code {
@@ -11,6 +12,6 @@ code {
 
 .Background {
   text-align: left;
-  background-color: #282c34;
+  background-color: #1E1E1E;
   font: inherit;
   }

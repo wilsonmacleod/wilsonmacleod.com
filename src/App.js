@@ -1,10 +1,10 @@
 import React from 'react';
 
-import SiteContainer from './Containers/SiteContainer/SiteContainer';
+import Container from './Containers/Container';
 
 function App() {
   return (
-    <SiteContainer />
+    <Container />
   );
 }
 
